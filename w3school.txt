@@ -1,0 +1,83 @@
+SQL HOME
+
+*SQL
+	Bahasa standar untuk menyimpan, manipulasi, dan mengambil data dalam database
+	
+-Mendapatkan semua kolom dari table Costumers:
+	SELECT * FROM Costumers;
+	
+SQL INTRO
+
+*Apa itu SQL?
+	-Structured Query Language, memberikan akses untuk manipulasi data di database.
+Menjadi standar ANSI pada 1986, dan ISO pada 1987
+
+*Apa Yang Bisa SQL Lakukan?
+	-Bisa eksekusi kueri pada database
+	-Bisa mengambil data pada database
+	-Bisa menambahkan record pada database
+	-Bisa mengupdate record pada database
+	-Bisa delete record pada database
+	-Bisa buat database baru
+	-Bisa membuat table baru pada database
+	-Dapat membuat Store Procedure (prosedur tersimpan) dalam database
+	-Bisa membuat tampilan dalam database
+	-Bisa mengatur izin pada table, prosedur, dan views
+	
+*SQL Itu Standart, tapi ..
+	Meskipun bahasa standar, tapi ada berbagai versi bahasa SQL.
+Tapi, perbedaan itu mendukung setidaknya perintah utama (SELECT, UPDATE, DELETE, INSERT, WHERE) dengan cara yg sama.
+
+*Menggunakan SQL Pada Website
+	-RDBMS database program
+	-ServerSide Scripting Language (PHP, ASP, Node, dll)
+	-Mendapatkan data yg di inginkan
+	-Juga menggunakan html dan css untuk styling halaman
+	
+*RDBMS (Relational Database Management System)
+	-Merupakan dasar untuk SQL dan untuk semua modern database sistem i.e. SQL Server, MySQL, Microsoft Access.
+Data pada RDBMS disimpan dalam objek database yang disebut table. Tabel adalah kumpulan entri data terkait dan terdiri dari kolom dan baris.
+Setiap table dipecah menjadi entitas yg lebih kecil yaitu field.
+	-Field adalah kolom dalam table yg dirancang untuk merepresentasikan informasi spesifik tentang setiap record pada table.
+	-Record atau Row, setiap entri individu yg ada di dalam table.
+	-Kolom merupakan entitas vertikal. 
+	
+*Database Tables
+	-Setiap table terindentifikasi dengan nama. Table mengandung records (row) dengan data.
+SQL Statements
+	-Tidak case sensitive. SELECT sama dengan select.
+	-Semikolon diperlukan setelah statement.
+Beberapa SQL Penting:
+	-SELECT, UPDATE, DELETE, INSERT INTO, CREATE DATABASE, ALTER DATABASE, CREATE TABLE, ALTER TABLE, DROP TABLE, CREATE INDEX, DROP INDEX
+	
+*SQL Select Statement
+	Digunakan untuk select data dari database
+	Pengembalian data tersimpan dalam table hasil, disebut result-set
+	Syntax: SELECT kolom1, kolom2, ...
+				FROM table_name
+			SELECT * FROM table_name
+			
+*SQL Select Distinct
+	Mengembalikan isi table hanya value yg berbeda.
+		SELECT DISTINCT Country from Customers;
+		
+*SQL Where Clause
+	Digunakan untuk filter records. 
+	Hanya menampilkan records yang memenuhi kondisi tertentu
+	Bisa digabungkan dengan SELECT, UPDATE, DELETE, dll
+		SELECT * FROM Customers WHERE City='Madrid';
+Text Fields vs Numeric Fields
+	SQL memerlukan single quote diantara text values (Kebanyakan DBMS mengizinkan "")
+	Namun, untuk numeric tidak boleh diapit tanda kutip. (???)
+Operator pada WHERE
+	== sama dengan
+	> lebih besar dari
+	< kurang dari
+	>= lebih besar sama dengan
+	<= kurang dari sama dengan
+	<> tidak samadengan (atau !=)
+	BETWEEN n AND n antara jarak tertentu
+	LIKE '%nama%' mencari sesuai pola
+	IN (ada di mana, lokasi preferred)
+
+then AND OR NOT

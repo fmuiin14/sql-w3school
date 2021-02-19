@@ -1,0 +1,3 @@
+-- SELECT * from Customers;
+-- SELECT ProductName, Unit FROM products;
+-- SELECT DISTINCT Country from Customers;
